@@ -10,3 +10,5 @@ My implementation is based on the A* algorithm: the heuristic function $h(x)$ is
 ## Visualizing animations
 
 To correctly visualize the matplotlib animations, you need to open the repository locally. The animations are saved in the `animations` folder.
+
+![](animations/35puzzle_solution.gif)
