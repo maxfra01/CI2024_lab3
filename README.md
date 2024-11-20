@@ -6,6 +6,7 @@ The 8-puzzle is a sliding puzzle that consists of a frame of numbered square til
 
 Moving a tile to the empty space is equivalent to moving the empty space to the tile. Therefore, at each step we can encode the possible actions as the four directions ["up", "down", "right", "left"] where the empty space can move (if possible).  
 My implementation is based on the A* algorithm: the heuristic function $h(x)$ is the combination of the Manhattan distance (i.e. the sum of the distances of each tile from its correct position) and the linear conflict (i.e. the number of conflicts between tiles in the same row or column). This idea of linear conflict was taken from the following resource: https://algorithmsinsight.wordpress.com/graph-theory-2/a-star-in-general/implementing-a-star-to-solve-n-puzzle/.
+Differently from the standard A* algorithm, I sort the frontier by the difference between the f-value and the g-value of each node. This way, we get a faster convergence to the solution.
 
 ## Visualizing animations
 
